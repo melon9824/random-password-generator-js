@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(45deg, #000, #333);
+    color: #4FBC89;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 12%;
+    width: 90%;
+    max-width: 500px;
+    height: fit-content;
+    padding: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container h1 {
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.container h1 span {
+    color: #ffa500;
+    text-decoration: .25rem #4FBC89 underline;
+    text-underline-offset: .5rem;
+    padding-bottom: 0.25rem;
+}
+
+.display {
+    width: 100%;
+    margin: 1rem 0rem;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.25rem;
+}
+
+.display input {
+    width: 80%;
+    font-size: 1rem;
+    caret-color: #ffa500;
+    padding: .25rem .5rem;
+    border-left: 2px solid #cecccc;
+    border-right: 2px solid #cecccc;
+}
+
+.display input::placeholder {
+    color: #cecccc;
+}
+
+.display img {
+    width: 1.75rem;
+    cursor: pointer;
+}
+
+.container button {
+    background: #ffa500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem 1.25rem;
+    font-size: .9rem;
+    color: #ffff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.container button img {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* footer */
+footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #2c2b2b;
+    padding-top: 0.5rem;
+}
+
+footer p {
+    font-size: .65rem;
+}
+
+footer p a {
+    color: #808080;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: all 0.3s;
+}
+
+footer p a:hover {
+    text-decoration: none;
+    color: #ffa500;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0.5rem;
+    }
+
+    .container h1 {
+        font-size: 1.25rem;
+    }
+    
+    footer {
+        flex-direction: column;
+        row-gap: 0.15rem;
+        text-align: center;
+    }
+}
